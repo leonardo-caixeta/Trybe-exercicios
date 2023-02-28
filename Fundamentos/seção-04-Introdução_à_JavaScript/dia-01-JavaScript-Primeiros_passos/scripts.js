@@ -1,9 +1,11 @@
-let a = 2
-let b = 3
-let c = 5
+let penteaderaCusto = 300
+let penteaderaValor = 600
+let lucro = penteaderaValor * 1000 - penteaderaCusto * 1000
+let imposto = penteaderaCusto * (20/100)
+let lucroTotal = lucro - lucroImposto
 
-if (a % 2 == 1 || b % 2 == 1|| c % 2 == 1) {
-  console.log("É ímpa essa cascaveli");
+if (penteaderaCusto <= 0 || penteaderaValor <= 0){
+  console.log("ERRO")
 } else {
-  console.log("Pà")
+ console.log("Tudo certo")
 }
