@@ -1,13 +1,14 @@
 let num1 = 3;
 let num2 = -7;
 let num3 = 0;
-let res = num1 + num2;
+let res = -2;
 
-if (num2 > num1 && num2 > num3){
-    console.log("num2 ganhou")
+if (res > 0){
+  console.log("Positive");
 }
-  else if (num1 > num2 && num1 >num3){
-    console.log("num1 ganhou");
+  else if (0 > res) {
+    console.log("Negative");
+  }
+  else {
+    console.log("zero");
 }
-  else if (num3 > num1 && num3 > num1)
-    console.log("num3 ganhou");
