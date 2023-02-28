@@ -1,25 +1,26 @@
-let peça = "kNight";
+let percent = 72;
 
-switch (peça.toLowerCase()) {
-  case "knight":
-    console.log("se move em L (3 para frente e um para o lado)");
-break;
-  case"queen":
-    console.log("se move para todas as direções");
-break;
-  case "king":
-  console.log("se move um quadrado por direção");
-break;
-  case "bishop":
-    console.log("se move nas diagonais");
-break;
-  case "hook":
-    console.log("se move para frente e para os lados ");
-break;
-  case "pawn":
-    console.log("no primeiro movimento pode-se pular 2 quadrados para frente, após,somente 1 quadrado por vez, pegando peças pulando na diagonal");
-break;
-  default:
-    console.log("Peça inexistente");
-break;
+if (percent < 100) {
+  console.log("ERRO_Maior que 100");
 }
+  else if (percent < 0){
+    console.log("ERRO_Menor que 0");
+  }
+  else if (percent >= 90) {
+    console.log("A");
+  }
+  else if (percent >= 80 && percent < 90) {
+    console.log("B");
+  }
+  else if (percent >= 70 && percent < 80) {
+    console.log("C");
+  }
+  else if (percent >= 60 && percent < 70) {
+    console.log("D");
+  }
+  else if (percent >= 50 && percent < 60) {
+    console.log("E")
+  }
+  else if (percent < 50 && percent > 0) {
+    console.log("F");
+  }
