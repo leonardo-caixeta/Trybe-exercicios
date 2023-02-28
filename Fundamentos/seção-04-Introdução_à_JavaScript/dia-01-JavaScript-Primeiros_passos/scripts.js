@@ -1,14 +1,11 @@
-let num1 = 3;
-let num2 = -7;
-let num3 = 0;
-let res = -2;
+let num1 = 50;
+let num2 = 70;
+let num3 = 50;
 
-if (res > 0){
-  console.log("Positive");
+if (num1 + num2 + num3 == 180) {
+  console.log("True");
 }
-  else if (0 > res) {
-    console.log("Negative");
-  }
-  else {
-    console.log("zero");
+  else{
+  console.log("False");
+  console.log("Falta de ângulos");
 }
