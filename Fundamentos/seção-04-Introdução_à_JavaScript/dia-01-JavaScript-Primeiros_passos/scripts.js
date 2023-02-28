@@ -1,4 +1,4 @@
-let salario = 3750;
+let salario = 6000;
 let inss = "";
 let receitaFederal = "";
 
