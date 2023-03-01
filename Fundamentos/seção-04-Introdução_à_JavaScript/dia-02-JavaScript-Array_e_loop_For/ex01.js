@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // for(let index = 0; index < numbers.length; index += 1){
 //   console.log(numbers[index])
@@ -86,18 +86,27 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 //Minha solução
 // ----------------------------------------------------
 
-let list = [];
+// let list = [];
 
-for (let index = 1; index < 26; index += 1) {
-  list.push(index)
-}
+// for (let index = 1; index < 26; index += 1) {
+//   list.push(index)
+// }
 
-console.log(list);
+// console.log(list);
 
-for (let index = 0; index < list.length; index += 1){
-  console.log(list[index] / 2);
-}
+// for (let index = 0; index < list.length; index += 1){
+//   console.log(list[index] / 2);
+// }
 // Solução do gabarito
 
 // ----------------------------------------------------
+
+let number = 10 ;
+let fatorial = 1 ;
+
+for (let index = number; index >= 1; index -= 1){
+  fatorial *= index;
+}
+
+console.log(fatorial);
 
