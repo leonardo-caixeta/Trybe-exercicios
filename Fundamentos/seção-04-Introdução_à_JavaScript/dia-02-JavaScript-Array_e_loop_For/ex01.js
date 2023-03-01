@@ -112,12 +112,25 @@
 
 // ----------------------------------------------------
 
-let word = 'tryber';
-let letter = '';
+// let word = 'tryber';
+// let letter = '';
 
-for (let index = word.length - 1; index >= 0; index -= 1) {
-  letter += word[index] ;
-}
-console.log(letter);
+// for (let index = word.length - 1; index >= 0; index -= 1) {
+//   letter += word[index] ;
+// }
+// console.log(letter);
 
 // ----------------------------------------------------
+
+let array = ['java', 'javascript', 'python', 'html', 'css', 'abc'];
+let smallestWord = array[0];
+let biggestWord = array[0];
+
+
+for (let index = 0; index < array.length; index += 1){
+  if (array[index] < smallestWord){
+    smallestWord = array[index]
+  }
+}
+
+console.log(smallestWord);
