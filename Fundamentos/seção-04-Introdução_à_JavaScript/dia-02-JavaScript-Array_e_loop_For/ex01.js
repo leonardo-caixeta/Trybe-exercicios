@@ -65,6 +65,27 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // ----------------------------------------------------
 
+// let list = [];
+
+// for (let index = 1; index < 26; index += 1) {
+//   list.push(index)
+// }
+
+// console.log(list);
+
+// ----------------------------------------------------
+
+// let list = [];
+// let res = [];
+
+// for (let index = 1; index < 26; index += 1) {
+//   list.push(index)
+//   res = index /2
+//   console.log(res);
+// }
+//Minha solução
+// ----------------------------------------------------
+
 let list = [];
 
 for (let index = 1; index < 26; index += 1) {
@@ -72,4 +93,11 @@ for (let index = 1; index < 26; index += 1) {
 }
 
 console.log(list);
-// -----------------------------------------------------
+
+for (let index = 0; index < list.length; index += 1){
+  console.log(list[index] / 2);
+}
+// Solução do gabarito
+
+// ----------------------------------------------------
+
