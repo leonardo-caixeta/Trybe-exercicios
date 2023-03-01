@@ -122,15 +122,36 @@
 
 // ----------------------------------------------------
 
-let array = ['java', 'javascript', 'python', 'html', 'css', 'abc'];
-let smallestWord = array[0];
-let biggestWord = array[0];
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
+// let smallestWord = array[0];
+// let biggestWord = array[0];
 
 
-for (let index = 0; index < array.length; index += 1){
-  if (array[index] < smallestWord){
-    smallestWord = array[index]
+// for (let index = 0; index < array.length; index += 1){
+//   if (array[index].length < smallestWord.length){
+//     smallestWord = array[index]
+//   }
+// }
+// for (let index = 0; index < array.length; index++) {
+//   if (array[index].length > biggestWord.length) {
+//     biggestWord = array[index]
+//   }
+
+// }
+// console.log(smallestWord);
+// console.log(biggestWord)
+
+// ----------------------------------------------------
+//Bubble Sort (nem tentei)
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (let index = 1; index < numbers.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbers[index] < numbers[secondIndex]) {
+      let position = numbers[index];
+      numbers[index] = numbers[secondIndex];
+      numbers[secondIndex] = position;
+    }
   }
 }
-
-console.log(smallestWord);
