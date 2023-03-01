@@ -94,19 +94,30 @@
 
 // console.log(list);
 
-// for (let index = 0; index < list.length; index += 1){
+// for (let index = 0; index < list.length; index += 1) {
 //   console.log(list[index] / 2);
 // }
 // Solução do gabarito
 
 // ----------------------------------------------------
 
-let number = 10 ;
-let fatorial = 1 ;
+// let number = 10 ;
+// let fatorial = 1 ;
 
-for (let index = number; index >= 1; index -= 1){
-  fatorial *= index;
+// for (let index = number; index >= 1; index -= 1) {
+//   fatorial *= index;
+// }
+
+// console.log(fatorial);
+
+// ----------------------------------------------------
+
+let word = 'tryber';
+let letter = '';
+
+for (let index = word.length - 1; index >= 0; index -= 1) {
+  letter += word[index] ;
 }
+console.log(letter);
 
-console.log(fatorial);
-
+// ----------------------------------------------------
