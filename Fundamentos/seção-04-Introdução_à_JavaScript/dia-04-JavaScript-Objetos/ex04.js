@@ -68,4 +68,10 @@ function totalStudents(allLessonsObj) {
   return result
 }
 
-console.log(totalStudents(allLessons));
+// console.log(totalStudents(allLessons));
+
+function getValueByNumber(key, value) {
+  return Object.values(key)[value]
+}
+
+console.log(getValueByNumber(lesson1, 0))
