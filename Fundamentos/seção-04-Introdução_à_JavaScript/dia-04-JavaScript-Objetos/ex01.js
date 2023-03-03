@@ -37,4 +37,4 @@ if (info.recorrente === infoTioPatinhas.recorrente){
 }
 
 console.log(infoAmbos);
-//console.log(infoRecorrente);
+console.log(infoRecorrente);
