@@ -25,26 +25,26 @@ addShift(lesson2, 'turno', 'noite')
 
 // console.log(lesson2);
 
-let keys ;
 
 function objectKeys(objectOne) {
-  return keys = Object.keys(objectOne)
+  let keys = Object.keys(objectOne);
+  return keys
 }
 
 // console.log(objectKeys(lesson1));
 
-let lenght ;
 
 function objectLenght(objectTwo) {
-  return lenght = Object.keys(objectTwo).length
+  let lenght = Object.keys(objectTwo).length;
+  return lenght
 }
 
 // console.log(objectLenght(lesson2));
 
-let values ;
 
 function objectValues(objectThree) {
-  return values = Object.values(objectThree)
+  let values = Object.values(objectThree);
+  return values
 }
 
 // console.log(objectValues(lesson3));
@@ -56,3 +56,16 @@ let allLessons = Object.assign({}, {
 })
 
 // console.log(allLessons)
+
+
+function totalStudents(allLessonsObj) {
+  let lessonsList = Object.values(allLessonsObj)
+  let result = 0;
+  for (let index = 0; index < lessonsList.length; index+= 1) {
+    let currentLesson = lessonsList[index];
+    result += currentLesson.numeroEstudantes
+  }
+  return result
+}
+
+console.log(totalStudents(allLessons));
