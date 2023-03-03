@@ -70,8 +70,22 @@ function totalStudents(allLessonsObj) {
 
 // console.log(totalStudents(allLessons));
 
-function getValueByNumber(key, value) {
-  return Object.values(key)[value]
+function getValueByNumber(object, value) {
+  return Object.values(object)[value]
 }
 
-console.log(getValueByNumber(lesson1, 0))
+// console.log(getValueByNumber(lesson1, 0))
+
+function verifyPair(obj, key, value) {
+  let exist = false;
+  let entries = Object.entries(obj)
+
+  for(let index in entries){
+    if(entries[index][0] === key && entries[index][1] === value)
+    exist = true;
+  }
+
+  return exist
+}
+
+console.log(verifyPair(lesson2,'professor','Carlos'));
