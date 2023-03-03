@@ -47,4 +47,12 @@ function objectValues(objectThree) {
   return values = Object.values(objectThree)
 }
 
-console.log(objectValues(lesson3));
+// console.log(objectValues(lesson3));
+
+let allLessons = Object.assign({}, {
+  lesson1: lesson1,
+  lesson2: lesson2,
+  lesson3: lesson3
+})
+
+// console.log(allLessons)
