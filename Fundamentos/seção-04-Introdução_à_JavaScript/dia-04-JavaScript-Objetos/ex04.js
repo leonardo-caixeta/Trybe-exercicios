@@ -25,10 +25,10 @@ addShift(lesson2, 'turno', 'noite')
 
 // console.log(lesson2);
 
-let objectOneKeys ;
+let keys ;
 
 function objectKeys(objectOne) {
-  return objectOneKeys = Object.keys(objectOne)
+  return keys = Object.keys(objectOne)
 }
 
 // console.log(objectKeys(lesson1));
@@ -39,4 +39,12 @@ function objectLenght(objectTwo) {
   return lenght = Object.keys(objectTwo).length
 }
 
-console.log(objectLenght(lesson2));
+// console.log(objectLenght(lesson2));
+
+let values ;
+
+function objectValues(objectThree) {
+  return values = Object.values(objectThree)
+}
+
+console.log(objectValues(lesson3));
