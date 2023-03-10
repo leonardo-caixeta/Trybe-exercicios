@@ -46,3 +46,11 @@ section {
 .main-content .description {
   text-align: center;
 }
+
+.right-content{
+  margin-right: auto
+}
+
+.center-content{
+  background-color: green;
+}
