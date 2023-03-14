@@ -13,8 +13,16 @@ window.onload = () => {
     if (savedBackground !== null){
       paragraph.style.fontSize = savedFontSize;
     }
-  };
+    const savedLineHeight = localStorage.getItem('lineHeight');
+    if (savedLineHeight !== null) {
+      paragraph.style.lineHeight = savedLineHeight;
+    }
+    const savedFontFamily = localStorage.getItem('fontFamily');
+    if (savedFontFamily !== null) {
+      paragraph.style.fontFamily = savedFontFamily;
+    }
 
+  };
 
   const backgroundColor = () => {
     const backgroundButton = document.getElementById('background-color');
@@ -40,12 +48,30 @@ window.onload = () => {
       localStorage.setItem('fontSize', size);
     })
   };
+  const lineHeight = () => {
+    const heightButton = document.getElementById('line-height');
+    heightButton.addEventListener('click', (event) =>{
+      const lineHeight = event.target.innerText;
+      paragraph.style.lineHeight = lineHeight;
+      localStorage.setItem('lineHeight', lineHeight)
+    });
+  };
+  const fontStyle = () => {
+    const styleButton = document.getElementById('font-family');
+    styleButton.addEventListener('click', (event) => {
+      const fontFamily = event.target.innerText;
+      paragraph.style.fontFamily = fontFamily;
+      localStorage.setItem('fontFamily', fontFamily)
+    });
+  };
 
   const calls = () => {
     setupColors();
     backgroundColor();
     fontColor();
     fontSize();
-  }
+    lineHeight();
+    fontStyle();
+  };
   calls();
 };
