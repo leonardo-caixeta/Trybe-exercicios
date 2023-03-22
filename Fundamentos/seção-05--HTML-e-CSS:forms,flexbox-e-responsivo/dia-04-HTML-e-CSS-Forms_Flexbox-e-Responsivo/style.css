@@ -24,9 +24,7 @@ body {
 
 .menu-container {
   display: flex;
-  width: 500px;
   justify-content:space-between;
-  border: 1px solid black;
   width: 100%;
   align-self: center;
 }
@@ -48,16 +46,23 @@ body {
 .main-container {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .movie-container {
   display: flex;
   flex-direction: column;
+  flex-grow: 10;
+  width: 700px;
 }
 
 .movie-container h2 {
   margin: 40px 0;
   text-align: center;
+}
+
+.movie-container section, article {
+  align-self: center;
 }
 
 .card-container {
@@ -74,12 +79,18 @@ body {
   height: 150px;
   justify-content: center;
   margin: 10px;
+  flex-basis: 16%;
+  flex-grow: 1;
 }
 
 .aside-container {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  flex-basis: 350px;
+  justify-content: flex-end;
+  flex-grow: 1;
+
 }
 
 .aside-container h3, h4 {
