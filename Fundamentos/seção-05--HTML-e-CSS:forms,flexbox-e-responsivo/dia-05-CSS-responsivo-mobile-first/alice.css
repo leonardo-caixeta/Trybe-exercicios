@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: lightcoral;
+    font-family: sans-serif;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  p {
+    padding: 0 5px;
+    line-height: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+}
