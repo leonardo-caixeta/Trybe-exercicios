@@ -9,23 +9,69 @@
   box-sizing: inherit;
 }
 body {
+  font-size: 24px;
 }
 article {
+  display: flex;
+  flex-flow: column;
 }
 h1 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
 }
 h2 {
+  display: flex;
+  justify-content: center;
 }
 img {
-	max-width: 100%;
+  max-width: 100%;
+  padding: 20px;
 }
 main {
+  background-color: rgb(94, 88, 88);
+  display: flex;
 }
 section {
+  color: aliceblue;
 }
 figure {
-	margin: 0;
+	display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 figcaption {
   font-size: .8em;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: rgba(199, 108, 108, 0.8);
+    margin: 25px 10%;
+    max-width: 1130px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  };
+
+  figure {
+    width: 20%;
+    margin-right: 2.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background: rgba(111, 143, 74, 0.8);
+    margin: 25px 10%;
+    max-width: 1130px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+  };
+
+  figure {
+    width: 20%;
+    margin-right: 2.5%;
+  }
 }
