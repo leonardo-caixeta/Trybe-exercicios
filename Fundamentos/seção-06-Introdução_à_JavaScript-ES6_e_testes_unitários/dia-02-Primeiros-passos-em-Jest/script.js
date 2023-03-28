@@ -67,10 +67,31 @@ const techList = (arrayTechnologies, name) => {
   return technologyList;
 };
 
+const hydrate = (numberOfDrinks) => {
+  const splitedNumber = numberOfDrinks.split('');
+  let water = 0;
+
+  for (let index = 0; index < splitedNumber.length; index += 1) {
+    const parsedNumber = parseInt(splitedNumber[index])
+
+    if (parsedNumber) {
+      water += parsedNumber
+    }
+  }
+
+  let glass = 'copo';
+
+  if (water > 1) {
+    glass = 'copos'
+  }
+  return `${water} ${glass} de água`
+};
+
 module.exports = {
   myRemove,
   myFizzBuzz,
   encode,
   decode,
-  techList
+  techList,
+  hydrate
 };
