@@ -63,44 +63,42 @@ const books = [
 
 // ex 1
 
-// const expectedResult = 'Stephen King';
-// const authorBornIn1947 = () => {
-//   const {author} = books.find((book) => book.author.birthYear === 1947)
-//   return author.name;
-// }
+const authorBornIn1947 = () => {
+  const {author} = books.find((book) => book.author.birthYear === 1947)
+  return author.name;
+}
 
 // console.log(authorBornIn1947());
 
 //ex 2
 
-// const expectedResult = 'Duna';
-// const smallerName = () => {
-//   let nameBook;
-//   books.forEach((element) => {
-//     if (element.name === 'Duna') {
-//       nameBook = element
-//     }
-//   });
-//   return nameBook;
-// }
+const smallerName = () => {
+  let nameBook;
+  books.forEach((element) => {
+    if (element.name === 'Duna') {
+      nameBook = element
+    }
+  });
+  return nameBook;
+}
 
 // console.log(smallerName());
 
 //ex 3
 
-// const getNamedBook = () => {
-//   const biggestBook = books.find((book) => book.name.length === 26)
-//   return biggestBook;
-// };
+const getNamedBook = () => {
+  const biggestBook = books.find((book) => book.name.length === 26)
+  return biggestBook;
+};
 
 // console.log(getNamedBook());
 
 // ex 4
 
-// const everyoneWasBornOnSecXX = () => {
-//   const peopleWereBornOnSecXX = books.every((book) => book.author.birthYear < 2000)
-//   return peopleWereBornOnSecXX;
-// };
+const everyoneWasBornOnSecXX = () => {
+  const peopleWereBornOnSecXX = books.every((book) => book.author.birthYear < 2000)
+  return peopleWereBornOnSecXX;
+};
 
 // console.log(everyoneWasBornOnSecXX());
 
@@ -111,4 +109,14 @@ const someBookWasReleaseOnThe80s = () => {
   return bookReleaseOn80s;
 }
 
-console.log(someBookWasReleaseOnThe80s());
+// console.log(someBookWasReleaseOnThe80s());
+
+//ex 6
+
+const authorUnique = () => {
+  const birthYears = books.map((book) => book.author.birthYear);
+  const uniqueYears = new Set(birthYears);
+  return uniqueYears.size === birthYears.length;
+};
+
+console.log(authorUnique());
