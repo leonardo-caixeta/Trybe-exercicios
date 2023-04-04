@@ -88,9 +88,18 @@ const books = [
 
 //ex 3
 
-const getNamedBook = () => {
-  const biggestBook = books.find((book) => book.name.length === 26)
-  return biggestBook;
+// const getNamedBook = () => {
+//   const biggestBook = books.find((book) => book.name.length === 26)
+//   return biggestBook;
+// };
+
+// console.log(getNamedBook());
+
+// ex4
+
+const everyoneWasBornOnSecXX = () => {
+  const peopleWereBornOnSecXX = books.every((book) => book.author.birthYear < 2000)
+  return peopleWereBornOnSecXX;
 };
 
-console.log(getNamedBook());
+console.log(everyoneWasBornOnSecXX());
