@@ -73,15 +73,24 @@ const books = [
 
 //ex 2
 
-const expectedResult = 'Duna';
-const smallerName = () => {
-  let nameBook;
-  books.forEach((element) => {
-    if (element.name === 'Duna') {
-      nameBook = element
-    }
-  });
-  return nameBook;
-}
+// const expectedResult = 'Duna';
+// const smallerName = () => {
+//   let nameBook;
+//   books.forEach((element) => {
+//     if (element.name === 'Duna') {
+//       nameBook = element
+//     }
+//   });
+//   return nameBook;
+// }
 
-console.log(smallerName());
+// console.log(smallerName());
+
+//ex 3
+
+const getNamedBook = () => {
+  const biggestBook = books.find((book) => book.name.length === 26)
+  return biggestBook;
+};
+
+console.log(getNamedBook());
