@@ -63,10 +63,25 @@ const books = [
 
 // ex 1
 
-const expectedResult = 'Stephen King';
-const authorBornIn1947 = () => {
-  const {author} = books.find((book) => book.author.birthYear === 1947)
-  return author.name;
+// const expectedResult = 'Stephen King';
+// const authorBornIn1947 = () => {
+//   const {author} = books.find((book) => book.author.birthYear === 1947)
+//   return author.name;
+// }
+
+// console.log(authorBornIn1947());
+
+//ex 2
+
+const expectedResult = 'Duna';
+const smallerName = () => {
+  let nameBook;
+  books.forEach((element) => {
+    if (element.name === 'Duna') {
+      nameBook = element
+    }
+  });
+  return nameBook;
 }
 
-console.log(authorBornIn1947());
+console.log(smallerName());
