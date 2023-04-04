@@ -95,11 +95,20 @@ const books = [
 
 // console.log(getNamedBook());
 
-// ex4
+// ex 4
 
-const everyoneWasBornOnSecXX = () => {
-  const peopleWereBornOnSecXX = books.every((book) => book.author.birthYear < 2000)
-  return peopleWereBornOnSecXX;
-};
+// const everyoneWasBornOnSecXX = () => {
+//   const peopleWereBornOnSecXX = books.every((book) => book.author.birthYear < 2000)
+//   return peopleWereBornOnSecXX;
+// };
 
-console.log(everyoneWasBornOnSecXX());
+// console.log(everyoneWasBornOnSecXX());
+
+//ex 5
+
+const someBookWasReleaseOnThe80s = () => {
+  const bookReleaseOn80s = books.some((book) => book.releaseYear > 1980 || book.releaseYear < 1990);
+  return bookReleaseOn80s;
+}
+
+console.log(someBookWasReleaseOnThe80s());
