@@ -4,9 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Validador de campos</title>
 </head>
 <body>
+  <div id="container">
 
+  <h1>Validador de campos</h1>
+<form action="">
+  <input type="text" placeholder="digite aqui..." name="text" id="value">
+
+  <select name="campo" id="options">
+    <option value="cpf">CPF</option>
+    <option value="email">EMAIL</option>
+    <option value="hexcolor">HEXCOLOR</option>
+    <option value="uuid">UUID</option>
+    <option value="url">URL</option>
+  </select>
+
+  <button id="button">Validar</button>
+</form>
+<p id="answer">Digite o valor, escolha a opção e clique em validar</p>
+</div>
 </body>
 </html>
