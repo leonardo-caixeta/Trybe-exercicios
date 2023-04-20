@@ -1,0 +1,10 @@
+#div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img, #text, #sort {
+  display: flex;
+  align-self: center;
+}
